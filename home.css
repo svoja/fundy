@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #1d428a, #c8102e); /* ไล่สี NBA ฟ้า-แดง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* ✅ กล่อง Register */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-box {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 380px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ✅ โลโก้ NBA */
+.logo-container img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+/* ✅ หัวข้อ Create Account */
+h2 {
+    font-size: 24px;
+    color: #1d428a;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* ✅ การจัดวาง Input Fields */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #1d428a;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 2px solid #1d428a;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+/* ✅ เอฟเฟกต์เมื่อกดที่ช่องกรอกข้อมูล */
+.form-group input:focus {
+    border-color: #c8102e;
+    box-shadow: 0 0 7px rgba(200, 16, 46, 0.6);
+    outline: none;
+}
+
+/* ✅ ปุ่ม REGISTER */
+.btn-register {
+    background: linear-gradient(to right, #c8102e, #ff4b4b);
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 14px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    box-shadow: 0px 5px 12px rgba(200, 16, 46, 0.5);
+}
+
+/* ✅ เอฟเฟกต์เมื่อเอาเมาส์ไปชี้ที่ปุ่ม */
+.btn-register:hover {
+    background: linear-gradient(to right, #ff4b4b, #c8102e);
+    box-shadow: 0px 8px 18px rgba(200, 16, 46, 0.6);
+    transform: scale(1.05);
+}
+
+/* ✅ ลิงก์ไปหน้า Login */
+.login-link {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #c8102e;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+    color: #ff4b4b;
+}
+
+/* ✅ Responsive Design สำหรับมือถือ */
+@media (max-width: 400px) {
+    .register-box {
+        width: 90%;
+    }
+}

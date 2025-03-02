@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0d1b2a, #1d428a, #c8102e); /* ไล่สี NBA */
+    text-align: center;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* ✅ Header */
+header {
+    background: white;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* ✅ โลโก้ NBA */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo-container img {
+    width: 140px;
+}
+
+/* ✅ หัวข้อ NBA League Pass */
+.header-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #1d428a, #c8102e);
+    
+}
+
+/* ✅ Container สำหรับแพ็กเกจ */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* ✅ กล่องแพ็กเกจ */
+.plan {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    width: 340px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: 3px solid transparent;
+    color: black; /* ✅ เปลี่ยนตัวอักษรเป็นสีดำ */
+}
+
+/* ✅ Hover effect */
+.plan:hover {
+    transform: scale(1.08);
+    border: 3px solid #ffcc00;
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.6);
+}
+
+/* ✅ หัวข้อแพ็กเกจ */
+.plan h2 {
+    color: #1d428a;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* ✅ Premium Plan */
+.premium {
+    background: #1d428a;
+    color: white;
+    border: 3px solid #ffcc00;
+}
+
+.premium h2 {
+    color: #ffcc00;
+}
+
+/* ✅ ปรับสีตัวอักษรที่อ่านไม่ออก */
+.plan p {
+    color: #000; /* ✅ เปลี่ยนจากสีขาวเป็นสีดำสนิทเพื่อให้อ่านง่ายขึ้น */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.premium p {
+    color: #fff; /* ✅ ใน Premium ใช้สีขาวเพราะพื้นหลังเข้ม */
+}
+
+/* ✅ ปุ่มสมัคร */
+.subscribe-btn {
+    background: linear-gradient(to right, #c8102e, #ff4b4b);
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(200, 16, 46, 0.4);
+    transition: all 0.3s;
+}
+
+/* ✅ Hover effect ปุ่ม */
+.subscribe-btn:hover {
+    background: linear-gradient(to right, #ff4b4b, #c8102e);
+    box-shadow: 0px 6px 15px rgba(200, 16, 46, 0.6);
+    transform: scale(1.08);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

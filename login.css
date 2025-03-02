@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #1d428a, #c8102e); /* ไล่สีฟ้า-แดง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 📌 กล่อง Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 📌 โลโก้ NBA */
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo-container img {
+    width: 100px;
+}
+
+/* 📌 หัวข้อ Login */
+.login-box h2 {
+    font-weight: bold;
+    color: #1d428a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 📌 กรอบช่องกรอกข้อมูล (ขยับไปซ้ายสุด) */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* 📌 Labels (ทำให้ชิดซ้ายสุด) */
+.input-label {
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    color: #1d428a;
+    margin-bottom: 5px;
+}
+
+/* 📌 Input Fields (ชิดซ้ายสุด) */
+.input-field {
+    width: calc(100% - 10px); /* ลดขนาดนิดนึงเพื่อให้ชิดซ้าย */
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #1d428a;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+    display: block; /* ทำให้เป็นบล็อกชิดซ้าย */
+}
+
+.input-field:focus {
+    border-color: #c8102e;
+    box-shadow: 0 0 5px rgba(200, 16, 46, 0.5);
+    outline: none;
+}
+
+/* 📌 ปุ่ม Login */
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #C8102E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(200, 16, 46, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.login-box button:hover {
+    background: #A10E2B;
+    box-shadow: 0 6px 15px rgba(200, 16, 46, 0.4);
+    transform: translateY(-2px);
+}
+
+/* 📌 ข้อความ Error */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* 📌 ลิงก์ไป Register */
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #1d428a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    color: #C8102E;
+}
+
+/* 📌 Responsive สำหรับมือถือ */
+@media (max-width: 400px) {
+    .login-box {
+        width: 90%;
+    }
+}

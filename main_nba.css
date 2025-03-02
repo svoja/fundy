@@ -1,0 +1,146 @@
+/* 🎨 ตั้งค่าพื้นหลังของทุกหน้าให้เหมือนกัน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* สีเทาอ่อน */
+    color: #000;
+}
+
+/* 📌 Navbar */
+.navbar {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #c00; /* สีแดงแบบ NBA */
+}
+
+/* 🎬 Header ของแต่ละหน้า */
+.page-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #1d1d1d;
+}
+
+/* 📦 Grid Layout สำหรับ Players, Teams, และ Watch */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* 🏆 การ์ดของ Players และ Teams */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 🏀 รูปภาพของ Players และ Teams */
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* ✨ ข้อความชื่อผู้เล่นและทีม */
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* 🎥 การ์ดวิดีโอสำหรับ Watch */
+.video {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 📌 รูป Thumbnail ของวิดีโอ */
+.video img {
+    width: 100%;
+    height: 160px; /* ตั้งค่าความสูงให้เท่ากัน */
+    object-fit: cover; /* ปรับให้รูปเต็มพื้นที่ */
+    border-radius: 8px;
+}
+
+/* 🏀 ชื่อวิดีโอ */
+.video p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1d1d1d;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .navbar a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
+header {
+    background: linear-gradient(90deg, #ffffff, #ffffff);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.Leaguepass {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}

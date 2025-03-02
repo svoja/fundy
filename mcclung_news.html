@@ -1,0 +1,143 @@
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /* ปุ่ม Login/Register/Logout */
+        .auth-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .auth-buttons a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .auth-buttons .btn-logout {
+            background-color: #c8102e;
+        }
+
+        .auth-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        .auth-buttons .btn-logout:hover {
+            background-color: #a10e2b;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s, transform 0.2s;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            color: #c8102e;
+            background: rgba(0, 0, 0, 0.1);
+            transform: scale(1.1);
+        }
+
+        /* Main News */
+        .main-news {
+            text-align: center;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .main-news img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-news h2 {
+            margin-top: 10px;
+            color: #1d428a;
+            font-weight: bold;
+        }
+
+        /* Latest News */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .news-item {
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .news-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .news-item a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .news-item a:hover {
+            color: #c8102e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnukUjWgFK6ob_VaFitkMKcEuWV6V6Tcn6UA&s" alt="LOGO NBA">
+    </header>
+    
+    <nav class="navbar">
+        <a href="home.php">Home</a>
+    </nav>
+    <div class="container">
+        <div class="main-news">
+            <h1>2025 NBA Slam Dunk Contest Recap</h1>
+            <img src="https://www.hardwoodheroics.com/wp-content/uploads/2025/02/67acc717294564.10137051.webp" alt="Slam Dunk Contest 2025">
+        </div><br><br>
+        
+        <div class="content">
+            <p>The 2025 NBA Slam Dunk Contest was a night filled with excitement, breathtaking moments, and unforgettable performances. The contest once again proved why it remains one of the highlights of the NBA All-Star Weekend, captivating fans with a mix of athleticism and creativity. Mac McClung cemented his place in history by securing his third consecutive Slam Dunk Contest title, dazzling the audience with a series of gravity-defying moves. His ability to combine power, precision, and style in each dunk left the judges and crowd in awe.</p>
+            
+            <p>One of the most memorable moments of the night came from rookie sensation Victor Wembanyama, who introduced an innovative dunk that had never been seen before in the competition. Using his exceptional height and agility, Wembanyama delivered a dunk that showcased his unique skill set, proving that he is a player to watch in future contests. Meanwhile, the panel of judges, which included NBA legends like Shaquille O'Neal and Vince Carter, brought an added level of excitement and credibility to the event. Their reactions to each dunk, combined with the energy of the crowd, elevated the atmosphere inside the arena.</p>
+            
+            <p>For the first time in Slam Dunk Contest history, fans were given the opportunity to vote live on the best dunk of the night. This new feature allowed viewers from around the world to participate in the action, adding an extra layer of engagement to the competition. As the contest progressed, the level of competition intensified, culminating in a final round that had everyone on the edge of their seats. In the end, McClung sealed his victory with a breathtaking between-the-legs windmill dunk, solidifying his reputation as one of the greatest dunkers of all time.</p>
+            
+            <p>Overall, the 2025 NBA Slam Dunk Contest delivered everything fans had hoped for and more. The combination of high-flying athleticism, unexpected surprises, and fan interaction made this year's contest one for the ages. As the NBA continues to innovate and enhance the experience, the Slam Dunk Contest remains a must-watch event that never fails to entertain.</p>
+        </div>
+    </div>
+</body>
+</html>

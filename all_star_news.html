@@ -1,0 +1,145 @@
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+   /* ปุ่ม Login/Register/Logout */
+   .auth-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .auth-buttons a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .auth-buttons .btn-logout {
+            background-color: #c8102e;
+        }
+
+        .auth-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        .auth-buttons .btn-logout:hover {
+            background-color: #a10e2b;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s, transform 0.2s;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            color: #c8102e;
+            background: rgba(0, 0, 0, 0.1);
+            transform: scale(1.1);
+        }
+
+        /* Main News */
+        .main-news {
+            text-align: center;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .main-news img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-news h2 {
+            margin-top: 10px;
+            color: #1d428a;
+            font-weight: bold;
+        }
+
+        /* Latest News */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .news-item {
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .news-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .news-item a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .news-item a:hover {
+            color: #c8102e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnukUjWgFK6ob_VaFitkMKcEuWV6V6Tcn6UA&s" alt="LOGO NBA">
+    </header>
+    
+    <nav class="navbar">
+        <a href="home.php">Home</a>
+    </nav>
+    
+    
+    <div class="container">
+        <div class="main-news">
+            <h1>5 Takeaways from 2025 All-Star Weekend</h1>
+            <img src="https://cdn.nba.com/manage/2025/02/shaq-ogs.jpg" alt="NBA All-Star 2025"><br><br>
+            <p>The 2025 NBA All-Star Weekend was filled with exciting moments, surprises, and unforgettable performances. Here are five key takeaways from this year is event.</p>
+        </div><br><br>
+        
+        <h2>Key Takeaways</h2>
+        <ul class="takeaways-list">
+            <li><strong>1. LeBron Shines Again</strong> - LeBron James delivered yet another classic All-Star performance, proving he is still at the top of his game.</li>
+            <li><strong>2. Rising Stars Show Out</strong> - Young players like Victor Wembanyama and Scoot Henderson showcased their talent on the big stage.</li>
+            <li><strong>3. 3-Point Contest Thriller</strong> - Stephen Curry and Damian Lillard went head-to-head in one of the most exciting 3-Point Contests in years.</li>
+            <li><strong>4. Dunk Contest Revival</strong> - Mac McClung is incredible dunks reignited excitement for the Dunk Contest.</li>
+            <li><strong>5. All-Star Game Changes Work</strong> - The new format led to a more competitive and entertaining All-Star Game.</li>
+        </ul>
+    </div>
+</body>
+</html>
